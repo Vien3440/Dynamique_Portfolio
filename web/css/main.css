@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "yeti";
+  src: url("BananaYeti-ExtraboldTrial.ttf"); }
+@font-face {
+  font-family: "Basse";
+  src: url("Mobile Sans.ttf"); }
+  body{
+    background-color:#F05924;
+  }
+  
+  /*______________________Header________________________*/
+  
+  #blockLogo{
+      left: 0%;
+}
+  
+#fond1 {
+  /**** Page de garde****/
+  background-color: #00CA63;
+ 
+
+  }
+  #fond1 div {
+    /***Logo***/
+    text-align: center;
+    }
+  #fond1 h1 {
+    /***Titre***/
+    font-family: "yeti";
+    color: #006733;
+    font-size: 60px;
+    text-align: center;
+    margin-top:-1px; }
+
+/*______________________NavBar________________________*/
+.navbar {
+  /**Nav bar de bootstrap**/
+  background: rgba(0, 0, 0, 0.1);
+/*  visibility: hidden;*/
+  height: 53px !important;
+  /*****Webkit pour transiton plus dousse ...*/
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .navbar button {
+    width: 51px;
+    position: relative;
+    background-color: #00ca63;
+    border-right: 5px solid #248D37;
+    border-bottom: 5px solid #248D37; }
+  .navbar footer {
+    width: 250px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-around; }
+
+.navbar {
+  /***Classe appeler pour aficher la nav***/
+  visibility: visible;
+  background: #444444;
+  /*opacity:0.5;*/
+  -moz-box-shadow: 0px 5px 5px 0px;
+  -webkit-box-shadow: 0px 5px 5px 0px;
+  -o-box-shadow: 0px 5px 5px 0px;
+  box-shadow: 0px 5px 5px 0px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5); }
+  .opaque .nav-link {
+    color: #fff;
+    /**Couleur apeler quand la nav est visible**/ }
+
+.nav-link {
+  visibility: visible;
+  font-family: "yeti";
+  font-size: 40px;
+  color: #006733; }
+
+/*****Vertion reponsive****/
+/*****Font des bouton section***/
+@media (max-width: 767px) {
+  nav > header > ul {
+    padding-bottom: 15px;
+    background-color: #444444;
+    -moz-box-shadow: 0px 5px 5px 0px;
+    /** ombre **/
+    -webkit-box-shadow: 0px 5px 5px 0px;
+    -o-box-shadow: 0px 5px 5px 0px;
+    box-shadow: 0px 5px 5px 0px;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5); } }
+.navbar-toggle {
+  height: 43px; }
+
+.navbar-nav > li > a {
+  font-size: 40px;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  text-align: center; }
+
+/********Animation menu nav*****/
+/*block lien */
+@media (min-width: 768px) {
+  .logo {
+    margin-left: 64%;
+    margin-top: -47px;
+    width: 270px; } }
+/*______________________Section 1 Qui je suis / Loisir__________________________*/
+#Section1 {
+  /*******Bloc Section1 Qui je suis *****/
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  background-color: #F05924;
+  color: white; }
+  #Section1 header {
+    padding-top: 20px;
+    font-family: "yeti";
+    font-size: 60px;
+    margin-left: 50px; }
+
+.section1P1 {
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-top: 60px;
+  display: flex;
+  font-family: "Basse";
+  font-size: 25px; }
+
+#Section1 + img {
+  /******Image Ordinateur*****/
+  background: #00CA63;
+  padding: 3%;
+  margin-bottom: 2%;
+      margin-top: 5%;
+  border: 20px solid white; }
+
+#loisir {
+  margin-left: 45px;
+  font-family: "yeti";
+  font-size: 25px;
+  margin-top: 10%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  visibility: hidden; }
+
+#loisir > header {
+  font-size: 40px; }
+
+.listeLoisir{
+    text-align: center;
+}
+
+.contenLoisir {
+  display: flex;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 640px) {
+  #loisir > article {
+    display: none; }
+
+  #loisir {
+    background: url("image/loisir_responsive.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    margin-left: 0; } }
+.blocLoisir {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 10px; }
+
+
+
+/*___________________________Section 2 Exp proje Web____________________*/
+
+.graphe{
+  visibility: hidden;
+  padding-bottom: 5%;
+  padding: 5%;
+}
+
+#xp {
+padding-top: 50px;
+color: white;
+font-family: "yeti";
+font-size: 50px;
+text-align: center;
+margin-bottom: 4%;
+}
+.xpDev{
+  font-family: "Basse";
+  font-size: 25px;
+  color: white;
+  padding-left: 50px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 5%;
+}
+
+#roue{
+  position: absolute;
+}
+
+@media(max-width:720px) {
+  #roue{
+    position: absolute;
+    width: 200px;
+    height: 169px;
+  }
+}
+
+.idee{
+  position: absolute;
+  top: 288%;
+  right: 75%;
+}
+
+@media (max-width:1200px)  {
+  .idee{
+    top: 500%;
+    right: 70%;
+  }
+}
+
+@media (max-width:992px)  {
+  .idee{
+    display: none;
+  }
+}
+
+
+@media (min-width:992px) {
+  div#carousel-example-generic {
+      /* float: left; */
+      right: 20%;
+      border: 47px solid #B9451C;
+      border-left-color: rgba(0, 0, 0, 0.26);
+      border-right-color: rgba(0, 0, 0, 0.26);
+  }
+}
+/*___________________________Section 3 Formation________________________*/
+/****Skil bar ***/
+.pentagon {
+  padding-left: 50px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: inline-block; }
+
+/*******Section3 *****/
+#conteneurFormation {
+  color: white;
+}
+
+#conteneurFormation > header > h2{
+
+font-size: 61px;
+font-family: "yeti";
+text-align: center;
+padding-top: 5%;
+padding-bottom: 1%;
+}
+#conteneurFormation ul {
+  font-family: "yeti";
+font-size: 30px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 450px;
+
+ }
+
+ p.texte {
+     position: relative;
+     top: 30%;
+     text-shadow: 2px 2px rgba(58, 105, 29, 0.64);
+
+ }
+
+.boutonForma{  /****Bouton non clikée*******/
+height: 34%;
+position: relative;
+background: #00CA63;
+}
+
+.boutonClikeForma{ /****Bouton clikée*******/
+  background: #01753A;
+
+}
+
+
+#conteneurAnimation p {
+  font-family: "Basse";
+  position: absolute;
+  padding: 5px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#desinateurIndus {
+  visibility: hidden;
+  background:url("image/fondindus2.png");
+  background-size:cover;
+ }
+
+#animation {
+  visibility: hidden;
+  background:url("image/animation2.png");
+  background-position-y: 460px;
+  background-size: cover;
+background-position-y: 532px;
+}
+
+#beweb {
+  visibility: hidden;
+
+    background-color: #01753A;
+   }
+
+  .numero{
+    display: none;
+    position: relative;
+    top: 30%;
+  }
+
+@media (max-width:625px) {
+  .numero{
+    display: block;
+    font-size: 20px;
+  }
+  .texte{
+    display: none;
+  }
+}
+
+@media (max-width:750px) {
+  #conteneurAnimation p {
+    font-size: 25.6px;
+  }
+
+}
+
+  /***************footer*******************/
+
+  #footer{
+    text-align: center;
+    color:white;
+    margin-top: 70px;
+
+    background-color: #00CA63;
+    
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #sociaux>div{
+      font-size: 10px;
+  }
+  
+  #sociaux > ul {
+         margin: auto;
+    list-style: none;
+    display: flex;
+    width: 53%;
+    }
+
+    #sociaux > ul > li{
+      list-style: none;
+    }
+
+
+
+/*# sourceMappingURL=main.css.map */

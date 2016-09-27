@@ -1,0 +1,43 @@
+{% extends "index.html.twig"%}
+
+{% block  header %}{%endblock%}
+
+        
+        {% block body %}
+               <div class="container" >   
+                   <div class="row">
+                       
+            {% for Projet in projets %}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+    <img src="{{asset('images/')~Projet.Images}}">
+      <div class="caption">
+        <h3>{{Projet.Titre}}</h3>
+        <p>{{Projet.Description}}</p>
+        <p><a href="http://{{Projet.Lien}}">{{Projet.Lien}}</a></p>
+        <p><a href="{{ path('suprProjet', {'id':Projet.id})}}" class="btn btn-danger" role="button">Supr</a> <a href="{{ path('editProjet',{'id':Projet.id})}}" class="btn btn-success" role="button">Modif</a></p>
+        
+      </div>
+    </div>
+  </div>
+
+        
+        {% endfor %}
+        </div>
+        </div>
+    {% endblock %}
+
+    
+{#{% for Projet in projet %}
+         <div>
+           <p>{{Projet.Titre}}</p>  
+           <p>{{Projet.Images}}</p>
+           <p>{{Projet.Description}}</p>
+           <p>{{Projet.Lien}}</p>
+           <div>
+               
+           </div>
+         </div>
+        </div>
+        {% endfor %}
+        #}
