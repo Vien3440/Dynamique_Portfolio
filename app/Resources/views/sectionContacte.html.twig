@@ -1,0 +1,39 @@
+{%extends "index.html.twig"%}
+
+{% block  header %}{%endblock%} 
+
+{% block body %}
+    <section id="conteneurConta"class="container">
+        <h3 class="col-lg-12">Contacte</h3>
+        <div class="container col-lg-6" >
+        
+        <div class="col-lg-6 ">
+                    <a href="#" class="thumbnail twit">
+                        <img src="{{asset('./imglogo/twitter.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+        </div>
+        <div class="col-lg-6 ">
+                    <a href="#" class="thumbnail fb ">
+                        <img src="{{asset('./imglogo/facebook.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+        </div>
+        <div class="col-lg-6 ">
+                    <a href="#" class="thumbnail linke">
+                        <img src="{{asset('./imglogo/linkedin.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+        </div>
+        <div class="col-lg-6 ">
+                    <a href="#" class="thumbnail gmail">
+                        <img src="{{asset('./imglogo/gmail.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+        </div>
+        </div>
+                     <div class="container col-lg-5" >
+                         <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/cv.png')}}"  alt="logoBoostrap">
+                    </a>
+                     </div >
+       
+    </section>
+    
+{%endblock%}

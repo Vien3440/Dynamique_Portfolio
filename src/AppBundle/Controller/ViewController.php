@@ -1,11 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -17,15 +11,63 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  *
  * @author vivien
  */
-class ViewController extends Controller{
-    
+class ViewController extends Controller {
+
+// Home   
     /**
      * @Route("/",name="home");
      * @Template("index.html.twig");
      */
-    public function Index(){
-               
+    public function index() {
+        
     }
 
+//Section Qui suis je
+    /**
+     * @Route("/qui",name="qui");
+     * @Template("sectionQui.html.twig");
+     */
+    public function indexQui() {
+        
+    }
     
+//Section Formation
+    /**
+     * @Route("/formation",name="forma");
+     * @Template("sectionFormation.html.twig");
+     */
+    public function indexFormation() {
+        
+    }
+//Section Compétence
+    /**
+     * @Route("/competence",name="compe");
+     * @Template("sectionConpetence.html.twig");
+     */
+    public function indexCompetence() {
+        
+    }
+//Section Contact
+    
+    /**
+     * @Route("/contact",name="contact");
+     * @Template("sectionContacte.html.twig");
+     */
+    public function indexContacte() {
+        
+        
+    }
+    
+
+//Section Projet
+    /**
+     * @Route("/projet", name="projet");
+     * @Template("projet.html.twig");
+     */
+    public function indexProjet() {
+        $em = $this->getDoctrine()->getManager();
+        $projet = $em->getRepository("AppBundle:Projet")->findAll();
+        return $this->render('projet.html.twig', array("projets" => $projet));
+    }
+
 }

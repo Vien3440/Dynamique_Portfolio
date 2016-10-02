@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 oct. 2016, 16:23:15
+    Author     : vivien
+*/
+
+#conteneurComp{
+    color: white;
+}
+
+#titreXp{
+    text-align: center;
+    margin-top:100px;
+    font-family: "yeti";
+    font-size: 60px;
+    
+}
+
+#textXp{
+font-family: "Basse";
+font-size: 35px;
+}
+
+#conteneurImgComp{
+    margin-top: 40px;
+}

@@ -1,0 +1,24 @@
+{%extends "index.html.twig"%}
+
+{% block  header %}{%endblock%} 
+
+{% block body %}
+     <section id="Section1"  class="col-md-12 col-lg-6">
+            <header>Qui suis je ?</header>
+            <article class="section1P1">
+                <article class="text1P1">Développeur web junior, je suis passionné par le web,les changements apportés par les technologies numériques et les arts graphiques.</article>
+            </article>
+            <article id="loisir">
+                <header><p>Centre d'interets</p></header>
+                <article>
+                    <article class="listeLoisir col-lg-2 col-xs-2"><p>Musique</p><img src="{{asset('images/loisir_music.png')}}"/></article>
+                    <article class="listeLoisir col-lg-2 col-xs-2"><p>Basket</p><img src="{{asset('images/loisir_basket.png')}}"/></article>
+                    <article class="listeLoisir col-lg-2 col-xs-2"><p>Nature</p><img src="{{asset('images/loisir_nature.png')}}"/></article>
+                    <article class="listeLoisir col-lg-2 col-xs-2"><p>Skate</p><img src="{{asset('images/loisir_skate.png')}}"/></article>
+                    <article class="listeLoisir col-lg-2 col-xs-2"><p>Numerique</p><img src="{{asset('images/loisir_numerique.png')}}"/></article>
+                    <article class="listeLoisir col-lg-2 col-xs-2"><p>Art</p><img src="{{asset('images/loisir_art.png')}}"/></article>
+                </article>
+            </article>
+        </section>
+        <img class="image1 col-lg-6 col-md-12 col-xs-12" src="{{asset('images/claviercafee.png')}}"/>
+{% endblock %}

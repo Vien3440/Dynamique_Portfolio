@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 oct. 2016, 10:31:08
+    Author     : vivien
+*/
+
+#conteneurConta>h3{
+     font-family: "yeti";
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    color: white;
+    
+    
+}
+
+.thumbnail.twit{
+    border:none;
+    background-color: #63C3F0;
+    transition: .20s ease-in-out;
+}
+.thumbnail.twit:hover{
+    transition:.20s ease-in-out;
+    background-color:white;
+}
+
+.thumbnail.fb{
+    border:none;
+    background-color: #637CC6;
+    transition: .20s ease-in-out;
+}
+.thumbnail.fb:hover{
+    transition:.20s ease-in-out;
+    background-color:white;
+}
+
+
+.thumbnail.linke{
+    border:none;
+    background-color: #4797D5;
+    transition: .20s ease-in-out;
+}
+.thumbnail.linke:hover{
+    transition:.20s ease-in-out;
+    background-color:white;
+}
+
+
+
+.thumbnail.gmail{
+    border:none;
+    background-color:#E72131;
+     transition: .20s ease-in-out;
+}
+.thumbnail.gmail:hover{
+     transition:.20s ease-in-out;
+    background-color:white;
+}

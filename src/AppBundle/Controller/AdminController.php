@@ -22,16 +22,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class AdminController extends Controller {
     
-//    Partie View 
-    /**
-     * @Route("/projet", name="projet");
-     * @Template("projet.html.twig");
-     */
-    public function projet() {
-        $em = $this->getDoctrine()->getManager();
-        $projet = $em->getRepository("AppBundle:Projet")->findAll();
-        return $this->render('projet.html.twig', array("projets" => $projet));
-    }
+
 
     
 //    Partie Admin  

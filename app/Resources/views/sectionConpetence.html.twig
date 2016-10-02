@@ -1,0 +1,59 @@
+{%extends "index.html.twig"%}
+
+{% block  header %}{%endblock%} 
+
+{% block body %}
+
+    <section id="conteneurComp" class="container">
+        <article class=" col-lg-offset-1 col-lg-10  col-lg-offset-1">
+            <header id="titreXp">Competence</header>
+            <p id="textXp">
+                D'une nature créative, à l'écoute de vos besoins, je sais mettre en œuvre un projet web de l'idée (Mokup) à la version de déploiement suivant vos attentes, tout en mettant en avant une expérience utilisateur innovante, réfléchie.
+                N'hésitez pas à visionner mes projets et à me contacter .
+            </p>
+        </article>    
+    </section>
+    <section id="conteneurImgComp"class="container-fluid">
+        
+         <div >
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/html5.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/css3.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/jquery.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/bootstrap.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/sass.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/php.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-lg-2 col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="{{asset('./imglogo/sql.png')}}" height="60" width="60" alt="logoBoostrap">
+                    </a>
+                </div>
+               
+               
+            </div>
+    </section>
+
+{% endblock %}
