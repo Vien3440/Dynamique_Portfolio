@@ -13,6 +13,7 @@ use AppBundle\Form\ProjetType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -30,12 +31,12 @@ class AdminController extends Controller {
     //    Edit Admin Projet
     /**
      * @Route("/admin/projet", name="projetAdmin");
-     * @Template("projet.html.twig");
+     * @Template("projetAdmin.html.twig");
      */
     public function projetAdmin() {
-        $em = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine();
         $projet = $em->getRepository("AppBundle:Projet")->findAll();
-        return $this->render('projetAdmin.html.twig', array("projets" => $projet));
+        return array("projets" => $projet);
     }
 
  //    Ajout Admin Projet
@@ -120,5 +121,52 @@ class AdminController extends Controller {
         }
         return $this->redirect($this->generateUrl('projetAdmin'));
    }
+   
+   /**
+    * @Route("/login",name="login")
+    * @Template("sectionLogin.html.twig")
+    */
+   public function getLogin() {
+       
+   }
+
+
+   /**
+     * Methohde a déclarer dans un controlleur mais la requete est capturée avant l'appel a cette methode
+     * ici c'est pour la verification du formulaire de login
+     * @Route("/loginCheck",name="loginCheck")
+     * @throws Exception
+     */
+    public function check() {
+        throw new Exception('Verifiez votre fichier security');
+    }
+    /**
+     * idem déconnexion
+     * @Route("/loginOut",name="loginOut")
+     * @throws Exception
+     */
+    public function logout() {
+        throw new Exception('Verifiez votre fichier security');
+    }
+    
+     /**
+     * là c'est la petite methode pour ajouter un utilisateur 
+     * @Route("/add",name="add")
+     * @throws Exception
+     */
+    public function add() {
+        $u = new User();
+        $u->setNom("util");
+        $u->setPass("util4");
+        $u->setRoles(array("ROLE_USER"));
+        
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($u);
+        $em->flush();
+        
+        return $this->redirectToRoute("home");
+    }
+    
+
 }
  

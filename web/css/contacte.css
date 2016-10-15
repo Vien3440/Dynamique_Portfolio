@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : vivien
 */
 
-#conteneurConta>h3{
+#conteneurConta>.container>h3{
      font-family: "yeti";
     text-align: center;
     margin-top: 70px;
@@ -60,3 +60,13 @@ and open the template in the editor.
      transition:.20s ease-in-out;
     background-color:white;
 }
+
+
+#cv>h3{
+    font-family: "yeti";
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+    
+  }

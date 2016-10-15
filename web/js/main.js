@@ -1,8 +1,7 @@
 /*****header*****/
 
- $(window).on('resize',function() { 
- }); 
- $("#fond1").css("height", window.innerHeight );
+
+ $("#fond1").css("height", window.innerHeight);
  
  $(document).ready(function() {
   // $(window).resize() est appelée chaque fois que la fenêtre est redimensionnée par l'utilisateur.

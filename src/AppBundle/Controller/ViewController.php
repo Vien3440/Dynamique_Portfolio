@@ -67,7 +67,7 @@ class ViewController extends Controller {
     public function indexProjet() {
         $em = $this->getDoctrine()->getManager();
         $projet = $em->getRepository("AppBundle:Projet")->findAll();
-        return $this->render('projet.html.twig', array("projets" => $projet));
+        return array("projets" => $projet);
     }
 
 }

@@ -1,0 +1,17 @@
+{% extends "index.html.twig"%}
+
+{% block  header %}{%endblock%}
+
+{% block body %}
+
+    
+        <div class="thumbnail">      
+            <form action="{{path('loginCheck',{}) }}" method="post">
+            <input type="text" id="nom" name="_username" placeholder="Nom d'utilisateur" value=""/>
+            <input type="password" id="pass" name="_password" placeholder="Mot de passe" value=""/>
+            <input type="submit" value="se connecter"/>
+        </form>
+            </div>
+    
+
+{% endblock %}
